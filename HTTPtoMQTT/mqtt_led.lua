@@ -56,7 +56,7 @@ end
 
 -- Mqtt start method
 function mqttStart()
-    m = mqtt.Client(CLIENTID1,120,"user id of cloud mqtt user","password of cloud mqtt user")
+    m = mqtt.Client(CLIENTID1,120,"user1","password")
     m:connect(HOST,PORT,0,0,function(client)
         print("Connected...")
     end,
